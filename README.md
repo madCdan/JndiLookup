@@ -20,6 +20,7 @@ For example : java -jar JndiLookup.jar java -jar JndiLookup.jar "\\${jndi:\\${lo
 By default, the JNDI lookup is disabled (and replaced by a lookup function that will just add "jndi:" but it's possible to enable the real JNDI lookup by passing the "-X" parameter to JndiLookup ("-X" to be passed as the first parameter) ; PLEASE BE CAUTIOUS with this because it could lead to your system being compromised.
 
 For example : java -jar JndiLookup.jar -X "\\${jndi:ldap://w8pcb14reujq65vic39pz9amv.canarytokens.com/a}"
+[ This example uses one of my canary token, it's just for the example ; please know I'll be notified if you use this command - no problem on my side but I'll get the IP from which the DNS request is done ]
 
 
 
