@@ -34,6 +34,7 @@ Other lookup might be availabled depending on your environment :
 - kubernetes
 - spring
 - jvmrunargs
+
 [ Please see https://github.com/apache/logging-log4j2/blob/c30a1398a6697fb832c650870c44284d0052103e/log4j-core/src/main/java/org/apache/logging/log4j/core/lookup/Interpolator.java for details on lookup plugin activation]
 
 Please be aware this tool uses the real code from log4j lookup feature and it could be vulnerable because of other (non-JNDI) security issues.
